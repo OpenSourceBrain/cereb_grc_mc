@@ -72,17 +72,35 @@ Based on: Diwakar S, Magistretti J, Goldfarb M, Naldi G, D`Angelo E (2009) Axona
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter"/>
     </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter"/>
+    </void>
    </void>
    <void method="get">
     <string>Cell Type</string>
     <void method="add">
      <string>SingleCompPas</string>
     </void>
+    <void method="add">
+     <string>SingleComp_KA_mod</string>
+    </void>
+    <void method="add">
+     <string>SingleComp_KA</string>
+    </void>
    </void>
    <void method="get">
     <string>Priority</string>
     <void method="add">
      <int>10</int>
+    </void>
+    <void method="add">
+     <int>9</int>
+    </void>
+    <void method="add">
+     <int>8</int>
     </void>
    </void>
    <void method="get">
@@ -95,9 +113,31 @@ Based on: Diwakar S, Magistretti J, Goldfarb M, Naldi G, D`Angelo E (2009) Axona
       <int>255</int>
      </object>
     </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>64</int>
+      <int>69</int>
+      <int>233</int>
+      <int>255</int>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>183</int>
+      <int>144</int>
+      <int>161</int>
+      <int>255</int>
+     </object>
+    </void>
    </void>
    <void method="get">
     <string>Region Name</string>
+    <void method="add">
+     <string>Regions_1</string>
+    </void>
+    <void method="add">
+     <string>Regions_1</string>
+    </void>
     <void method="add">
      <string>Regions_1</string>
     </void>
@@ -106,6 +146,12 @@ Based on: Diwakar S, Magistretti J, Goldfarb M, Naldi G, D`Angelo E (2009) Axona
     <string>Cell Group Name</string>
     <void method="add">
      <string>CG_Pas</string>
+    </void>
+    <void method="add">
+     <string>CG_KA_mod</string>
+    </void>
+    <void method="add">
+     <string>CG_KA</string>
     </void>
    </void>
   </void>
@@ -137,6 +183,186 @@ Based on: Diwakar S, Magistretti J, Goldfarb M, Naldi G, D`Angelo E (2009) Axona
      </void>
      <void property="segmentId">
       <string>0</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>CG_KA_mod</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>CG_KA_mod_v</string>
+     </void>
+     <void property="maxValue">
+      <float>50.0</float>
+     </void>
+     <void property="minValue">
+      <float>-90.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>CG_KA_mod_v</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>CG_KA_mod</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_0</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_0</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>GRC_KA_mod:a</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>CG_KA_mod</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_0</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_1</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>GRC_KA_mod:b</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>CG_KA</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>CG_KA_mod_v</string>
+     </void>
+     <void property="maxValue">
+      <float>50.0</float>
+     </void>
+     <void property="minValue">
+      <float>-90.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>CG_KA_v</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>CG_KA</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_0</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_2</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>GRC_KA:a</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>CG_KA</string>
+     </void>
+     <void property="cellNumber">
+      <string>0</string>
+     </void>
+     <void property="graphWindow">
+      <string>GraphWin_0</string>
+     </void>
+     <void property="maxValue">
+      <float>1.0</float>
+     </void>
+     <void property="minValue">
+      <float>0.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>Var_3</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+     <void property="valuePlotted">
+      <string>GRC_KA:b</string>
      </void>
     </object>
    </void>
@@ -194,7 +420,7 @@ Based on: Diwakar S, Magistretti J, Goldfarb M, Naldi G, D`Angelo E (2009) Axona
    <float>100.0</float>
   </void>
   <void property="reference">
-   <string>Sim_2</string>
+   <string>Sim_12</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -213,7 +439,7 @@ Based on: Diwakar S, Magistretti J, Goldfarb M, Naldi G, D`Angelo E (2009) Axona
       </void>
      </void>
      <void property="cellGroup">
-      <string>CG_Pas</string>
+      <string>CG_KA_mod</string>
      </void>
      <void property="del">
       <void property="fixedNum">
@@ -222,7 +448,7 @@ Based on: Diwakar S, Magistretti J, Goldfarb M, Naldi G, D`Angelo E (2009) Axona
      </void>
      <void property="dur">
       <void property="fixedNum">
-       <float>500.0</float>
+       <float>100.0</float>
       </void>
       <void property="numberType">
        <int>11</int>
@@ -230,6 +456,90 @@ Based on: Diwakar S, Magistretti J, Goldfarb M, Naldi G, D`Angelo E (2009) Axona
      </void>
      <void property="reference">
       <string>Input_0</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>-0.005</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>CG_KA_mod</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>400.0</float>
+      </void>
+     </void>
+     <void property="dur">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+      <void property="numberType">
+       <int>11</int>
+      </void>
+     </void>
+     <void property="reference">
+      <string>Input_1</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.01</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>CG_KA</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+     </void>
+     <void property="dur">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+      <void property="numberType">
+       <int>11</int>
+      </void>
+     </void>
+     <void property="reference">
+      <string>Input_2</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>-0.005</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>CG_KA</string>
+     </void>
+     <void property="del">
+      <void property="fixedNum">
+       <float>400.0</float>
+      </void>
+     </void>
+     <void property="dur">
+      <void property="fixedNum">
+       <float>100.0</float>
+      </void>
+      <void property="numberType">
+       <int>11</int>
+      </void>
+     </void>
+     <void property="reference">
+      <string>Input_3</string>
      </void>
     </object>
    </void>
@@ -241,7 +551,10 @@ Based on: Diwakar S, Magistretti J, Goldfarb M, Naldi G, D`Angelo E (2009) Axona
     <object class="ucl.physiol.neuroconstruct.project.SimConfig">
      <void property="cellGroups">
       <void method="add">
-       <string>CG_Pas</string>
+       <string>CG_KA</string>
+      </void>
+      <void method="add">
+       <string>CG_KA_mod</string>
       </void>
      </void>
      <void property="description">
@@ -251,13 +564,40 @@ Based on: Diwakar S, Magistretti J, Goldfarb M, Naldi G, D`Angelo E (2009) Axona
       <void method="add">
        <string>Input_0</string>
       </void>
+      <void method="add">
+       <string>Input_1</string>
+      </void>
+      <void method="add">
+       <string>Input_2</string>
+      </void>
+      <void method="add">
+       <string>Input_3</string>
+      </void>
      </void>
      <void property="name">
       <string>Default Simulation Configuration</string>
      </void>
      <void property="plots">
       <void method="add">
+       <string>CG_KA_mod_v</string>
+      </void>
+      <void method="add">
+       <string>CG_KA_v</string>
+      </void>
+      <void method="add">
        <string>CG_Pas_v</string>
+      </void>
+      <void method="add">
+       <string>Var_0</string>
+      </void>
+      <void method="add">
+       <string>Var_1</string>
+      </void>
+      <void method="add">
+       <string>Var_2</string>
+      </void>
+      <void method="add">
+       <string>Var_3</string>
       </void>
      </void>
      <void property="simDuration">
