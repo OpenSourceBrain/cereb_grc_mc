@@ -345,26 +345,26 @@ begintemplate GrC
 			
 			//Connect all compartments
                         for(i=0;i<ndend;i=i+1){ 
-                                 connect dend_4[i](1), dend_3[i](0) 
-                                 connect dend_3[i](1), dend_2[i](0) 
-                                 connect dend_2[i](1), dend_1[i](0) 
-                                 connect dend_1[i](1), soma(0)
+                                 connect dend_4[i](0), dend_3[i](1) 
+                                 connect dend_3[i](0), dend_2[i](1) 
+                                 connect dend_2[i](0), dend_1[i](1) 
+                                 connect dend_1[i](0), soma(1)
 			}	 
-			connect soma(1), hillock[0](0)
-			connect hillock[0](1), hillock[1](0)
-			connect hillock[1](1), hillock[2](0)
-			connect hillock[2](1), hillock[3](0)
-			connect hillock[3](1), hillock[4](0)
-			connect hillock[4](1), axon[0](0)
+			connect soma(0), hillock[0](1)
+			connect hillock[0](0), hillock[1](1)
+			connect hillock[1](0), hillock[2](1)
+			connect hillock[2](0), hillock[3](1)
+			connect hillock[3](0), hillock[4](1)
+			connect hillock[4](0), axon[0](1)
 
 			for(i=0;i<naxon-1;i=i+1) {
-				connect axon[i](1), axon[i+1](0)
+				connect axon[i](0), axon[i+1](1)
 			}
 			
-			connect axon[naxon-1](1),branch0(0)
-			connect branch0(1),branch1(0)
- 			connect branch1(1),branch2(0)
- 			connect branch2(1),branch3(0)
+			connect axon[naxon-1](0),branch0(1)
+			connect branch0(0),branch1(1)
+ 			connect branch1(0),branch2(1)
+ 			connect branch2(0),branch3(1)
 
                         
       } 
